@@ -9,7 +9,64 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        Тип питомца
+        <input id="petType-1" name="petType" type="radio" value="cat">
+        <label for="petType-1">cat</label>
+        <input id="petType-2" name="petType" type="radio" value="dog">
+        <label for="petType-2">dog</label>
+        <input id="petType-3" name="petType" type="radio" value="tiger" checked>
+        <label for="petType-3">tiger</label>
+        <br>
+        <label>
+            Пол
+            <br>
+            <select name="gender">
+                <option value="none" selected>---</option>
+                <option value="boy">Мальчик</option>
+                <option value="girl">Девочка</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            eyeColor
+            <br>
+            <input type="color" name="eyeColor" value="#00000">
+        </label>
+        <br>
+        <input name="rules" hidden value="true">
+        <label>
+            Длина шерсти
+            <br>
+            <input type="number" name="tailLength" value="100" min="7" max="120">
+        </label>
+        <br>
+        <label>
+            Имя
+            <br>
+            <input type="text" name="name" minlength="3" maxlength="50" value="Барсик">
+        </label>
+        <br>
+        <label>
+            Дата рождения
+            <br>
+            <input type="date" name="dateOfBirth" value="2021-01-01">
+        </label>
+        <br>
+        <label>
+            Телефон
+            <br>
+            <input type="tel" name="phone" value="+71234567898">
+        </label>
+        <br>
+        <label>
+            <br>
+            Электронная почта
+            <input type="email" name="email" value="kek@google.com">
+        </label>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
 
 </main>
 </body>
