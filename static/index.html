@@ -11,6 +11,56 @@
 
     <!--Форму размещай тут-->
 
+    <form method="post" action="/pets/orders">
+        <label>Вид животного
+            <select name="petType">
+                <option value="cat" selected>Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        <br>
+        <label>Пол
+            <select name="gender">
+                <option value="none" selected>Любой</option>
+                <option value="boy">Мальчик</option>
+                <option value="girl">Девочка</option>
+            </select>
+        </label>
+        <br>
+        <label>Цвет глаз
+            <input name="eyeColor" type="color" value="#0000ff">
+        </label>
+        <br>
+        <label>Длина хвостика
+            <input name="tailLength" type="number" min="7" max="120" value="7" required>
+        </label>
+        <br>
+        <label>Послушный
+            <input type="radio" name="rules" value="true" checked>Да
+        </label>
+        <br>
+        <br>
+        <label>Ваше имя
+            <input name="name" type="text" placeholder="Booba" required>
+        </label>
+        <br>
+        <label>Дата рождения
+            <input name="dateOfBirth" type="date" placeholder="1991-01-01">
+        </label>
+        <br>
+        <label>Почта
+            <input name="email" type="email" placeholder="example@mail.com" required>
+        </label>
+        <br>
+        <label>Телефон
+            <input name="phone" type="tel" placeholder="88005553535" required>
+        </label>
+        <br>
+        <br>
+        <input name="reset" type="reset" value="Сбросить значения">
+        <input type="submit" value="Найти друга!">
+    </form>
 </main>
 </body>
 </html>
