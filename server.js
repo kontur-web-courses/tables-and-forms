@@ -37,12 +37,25 @@ app.listen(port, (err) => {
 app.use(express.static('static'));
 app.use(express.urlencoded({ extended: true }));
 
+function ChangeElement(data){
+    var re = /\W+/;
+    let newdata = data.split(re);
+    switch(newdata.petType){
+        case 'dog': newdata.petType = 'Собака'; break; 
+        case 'cat': newdata.petType = 'Кот'; break; 
+        case 'tiger': newdata.petType = 'Тигр'; break; 
+    };
+    return newdata;
+}
+ 
+
 app.post('/pets/orders', (request, response) => {
     const reqBody = request.body;
     const pageBody = constructPageBody(reqBody);
-
     console.log(request.body);
-
+    let f = ChangeElement(pageBody);
+    console.log(f);
     response.send(`${pageHead}${pageBody}${pageFoot}`);
 });
+
 
