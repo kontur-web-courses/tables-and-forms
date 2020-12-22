@@ -8,9 +8,32 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form name="feedback" method="POST" action="/pets/orders">
+        <label>Введите вид:
+            <p><select name="petType" size="1" multiple>
+                <option selected value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select></p>
+        </label>
+        <label>Введите пол:
+            <p><select name="gender" size="1" multiple>
+                <option selected value="boy">М</option>
+                <option value="girl">Ж</option>
+                <option value="none">Неизвестно</option>
+            </select></p>
+        </label>
+        <p><label>Введите цвет глаз: <input type="color" name="eyeColor"></label></p>
+        <p><label>Введите длину хвоста: <input type="text" name="tailLength" pattern= '^[ 0-9]+$' min="7" max="120" value="10"></label></p>
+        <p><label>Введите имя животного: <input type="text" name="name" min="3" max="50" value="Cot"></label></p>
+        <p><label>Выберите дату рождения: <input type="date" name="dateOfBirth" ></label></p>
+        <p><label>Выберите свой телефон: <input type="tel" name="phone"></label></p>
+        <p><label>Выберите электронную почту: <input type="email" name="email" value="123@mail.ru"></label></p>
+        <p><label>Выберите правило: <input type="text" name="rules" value="true"></label></p>
 
-    <!--Форму размещай тут-->
-
+        <input type="reset" name="send" value="Сброс">
+        <input type="submit" name="send" value="Отправить">
+    </form>
 </main>
 </body>
 </html>
