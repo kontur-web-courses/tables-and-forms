@@ -2,17 +2,6 @@ body {
     background-color: #F2F2F2;
 }
 
-main {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background: white;
-    min-height: calc(100vh - 60px);
-    border-radius: 20px;
-}
-
 h1 {
     font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -26,6 +15,32 @@ h1 {
     color: rgba(173,30,24,0.88);
 }
 
+.h1{text-align: center;}
 .orders {
     margin: 20px 0;
+}
+
+form {
+    margin: 0 auto;
+    padding: 20px 40px 40px 40px;
+    width: 450px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+    display: block;
+}
+
+.grey-text{
+    font-weight: normal;
+    color: #606060;
 }

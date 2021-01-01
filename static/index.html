@@ -2,15 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
 </head>
 <body>
-<main>
-    <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
-</main>
+<h1 style="text-align: center">Мы поможем вам найти себе друга!</h1>
+<form action="/pets/orders" method="POST">
+    <label for="name">Имя питомца:</label>
+    <input type="text" id="name" name="name">
+    <BR>
+    <label for="petType">Тип питомца:</label>
+    <select id="petType" name="petType">
+        <BR>
+        <option selected value="dog">Собака</option>
+        <option value="cat">Кот</option>
+        <option value="tiger">Тигр</option>
+    </select>
+    <label> Пол питомца:
+        <div class="grey-text">
+            <input type="radio" name="gender" id="male" value="boy" checked>Мальчик
+            <input type="radio" name="gender" id="female" value="girl">Девочка
+            <input type="radio" name="gender" id="unknown" value="none">Не важно
+        </div>
+    </label>
+    <BR>
+    <label> Цвет глаз
+        <br>
+        <input type="color" name="eyeColor" value="#fff">
+    </label>
+    <input name="rules" hidden value="true">
+    <label>
+        Длина шерсти
+        <br>
+        <input type="number" name="tailLength" value="100" min="7" max="120">
+    </label>
+    <label>
+        Дата рождения
+        <br>
+        <input type="date" name="dateOfBirth" value="2000-12-12">
+    </label>
+    <BR>
+    <label for="dateOfBirth">Возраст</label>
+    <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+    <BR>
+    <label for="email">Ваш email:</label>
+    <input type="email" name="email" id="email" placeholder="email@example.com">
+    <BR>
+    <label for="phone">Ваш номер телефона:</label>
+    <input type="tel" name="phone" id="phone" value="123">
+    <BR>
+    <label class="grey-text">
+        <input type="checkbox" name="rules" id="rules" value="true" required>Я ознакомился с правилами и согласен с условиями
+    </label>
+    <BR>
+    <input type="submit" value="Найти друга!" >
+    <BR>
+    <button type="reset">Сбросить</button>
+</form>
 </body>
 </html>
+
