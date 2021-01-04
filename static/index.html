@@ -9,7 +9,41 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <p><label>Animal type: <select name="petType">
+            <option value='cat' selected>Cats</option>
+            <option value='dog'>Dogs</option>
+            <option value='tiger'>Tigers</option>
+            <option value='hampter'>Hampters</option>
+            <option value='rock'>Rocks</option>
+        </select></label></p>
+
+        <p><label>Gender: 
+            <input name="gender" type="radio" value="boy" checked> male
+            <input name="gender" type="radio" value="girl"> female
+            <input name="gender" type="radio" value="none"> IDK
+        </label></p>
+
+        <p><label>Eye color: <input type='color' name="eyeColor" value="#e66465"></label></p>
+
+        <p><label>Tail length: <input name="tailLength" type="number" min="7" max="120" value="7"></label></p>
+
+        <p><label>Name: <input name="name" type="text" min="3" max="50" value="Max"></label></p>
+
+        <p><label>Date of Birth: 
+            <input name="dateOfBirth" type="date" value="2018-07-22" min="1900-01-01" max="2021-01-04">
+        </label></p>
+
+        <p><label>Email: <input name="email" type='email' value="Doge@google.com"></label></p>
+
+        <p><label>Phone number: <input name="phone" type='tel' value="88005553535"></label></p>
+
+        <p><label>I accept the agreement <input name="rules" type="checkbox" value="true" checked></label></p>
+
+        <p><input type="submit" value="Send"></p>
+
+        <p><button type="reset">Reset</button></p>
+    </form>
 
 </main>
 </body>
