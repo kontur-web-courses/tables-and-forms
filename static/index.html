@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8" />
     <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <form name="order" action="/pets/orders" method="post">
+        <fieldset>
+          <label
+            >Тип питомца:
+            <select name="petType">
+              <option value="cat">Кот</option>
+              <option value="dog">Собака</option>
+              <option value="dragon">Дракон</option>
+            </select>
+          </label>
+          <br />
+          <span>Пол:</span>
+          <label><input type="radio" name="gender" value="boy" />Мужской</label>
+          <label
+            ><input type="radio" name="gender" value="girl" />Женский</label
+          >
+          <label
+            ><input type="radio" name="gender" value="none" />Не знаю</label
+          >
+          <br />
+          <label>
+            Цвет глаз: <input type="color" name="eyeColor" value="#00000" />
+          </label>
+          <br />
+          <label
+            >Длина хвоста, см:
+            <input name="tailLength" type="number" placeholder="10"
+          /></label>
+          <br />
+          <label
+            >Имя: <input name="name" type="text" placeholder="Введите имя..."
+          /></label>
+          <br />
+          <label
+            >Дата рождения:
+            <input name="dateOfBirth" type="date" value="2020-02-01"
+          /></label>
+          <br />
+          <label
+            >Почта:
+            <input name="email" type="email" placeholder="address@email.com"
+          /></label>
+          <br />
+          <label
+            >Телефон:
+            <input
+              name="phone"
+              type="tel"
+              value=""
+              placeholder="+7 123 456 7890"
+          /></label>
+          <br />
+          <label
+            >Нажимая отправить, я соглашаюсь с правилами обработки данных
+            <input name="rules" type="hidden" value="true"
+          /></label>
+          <br />
+          <input type="reset" />
+          <br />
+          <input type="submit" value="Отправить" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
 </main>
 </body>
 </html>
