@@ -9,7 +9,59 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+
+    <label>
+        Тип животного:
+        <select name="petType">
+          <option selected value="cat">Кошка</option>
+          <option value="dog">Собака</option>
+          <option value="tiger">Тигр</option>
+        </select>
+      </label><br>
+
+  <p> Пол животного:</p>
+  <label>
+    <input type="radio" name="gender" value="girl">
+    Девочка
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="boy">
+    Мальчик
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="none" checked>Не важно
+  </label><br><br>
+
+ <label> Цвет глаз:
+        <input type="color" name="eyeColor">
+    </label><br><br>
+    <label> Длина хвоста:
+        <input type="range" min="7" max="120" name="tailLength">
+    </label><br><br>
+    <label> Имя хозяина:
+        <input type="text" name="name" placeholder="Введите имя" value="Джонне">
+    </label><br><br>
+    <label> Дата рождения:
+        <input type="date" name="dateOfBirth" value="2020-12-28">
+    </label><br><br>
+    <label> email:
+        <input type="email" name="email" value="catbox@mail" placeholder="Введите почту">
+    </label><br><br>
+    <label> Телефон:
+        <input type="tel" name="phone" value="+7" placeholder="Введите номер телефона">
+    </label><br><br>
+    <label> Согласие на обработку данных
+        <input type="checkbox" name="rules" value=true checked>
+    </label><br><br>
+
+    <input type="reset" name="reset"><br><br>
+
+    <input type="submit" value="Отправить форму">
+
+    </form>
 
 </main>
 </body>
