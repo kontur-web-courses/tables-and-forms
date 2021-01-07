@@ -8,9 +8,58 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <form action="/pets/orders" method="POST">
+        <p>
+            <label for="petType">Pet type:</label>
+            <select id="petType" name="petType">
+                <option selected value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="frog">Frog</option>
+            </select>
+        </p>
+        <p>
+            <label> Pet gender:
+            <div class="grey-text">
+                <input type="radio" name="gender" id="male" value="boy" checked>Male
+                <input type="radio" name="gender" id="female" value="girl">Female
+                <input type="radio" name="gender" id="unknown" value="none">Not important
+            </div>
+            </label>
+        </p>
+        <p>
+            <label for="eyeColor">Eye color:</label>
+            <input type="color" name="eyeColor" id="eyeColor">
+        </p>
+        <p>
+            <label for="tailLength">Tail lenght:</label>
+            <input type="number" id="tailLength" name="tailLength" min="0" max="200" value="15">
+        </p>
+        <p>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" placeholder="Sam" required>
+        </p>
+        <p>
+            <label for="dateOfBirth">Date of birth:</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" min="1900-01-01" required>
+        </p>
+        <p>
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+        </p>
+        <p>
+            <label for="phone">Your phone number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="12345" required>
+        </p>
+        <p>
+            <label class="grey-text">
+            <input type="checkbox" name="rules" id="rules" value="true" required>I accept the agreement
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Send" >
+            <button type="reset">Reset</button>
+        </p>
+    </form>
 </main>
 </body>
 </html>
