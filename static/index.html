@@ -10,7 +10,59 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
-
+    <form action="/pets/orders" method="POST">
+        <h3>Тип животного</h3>
+        <input checked id="petType-1" name="petType" type="radio" value="cat">
+        <label for="petType-1">Кошка</label>
+        <br>
+        <input id="petType-2" name="petType" type="radio" value="dog">
+        <label for="petType-2">Собака</label>
+        <br>
+        <label>
+            <h3>Пол</h3>
+            <select name="gender">
+                <option value="boy" selected>Мальчик</option>
+                <option value="girl">Девочка</option>
+            </select>
+        </label>
+        <label>
+            <h3>Цвет глаз</h3>
+            <input type="color" name="eyeColor" value="#000000">
+        </label>
+        <input name="rules" hidden value="true">
+        <label>
+            <h3>Длина хвоста</h3>
+            <input type="number" name="tailLength" value="100" min="7" max="120">
+        </label>
+        <label>
+            <h3>Имя хозяина</h3>
+            <input type="text" name="name" minlength="3" maxlength="50" value="Дмитрий" placeholder="Имя хозяина">
+        </label>
+        <label>
+            <h3>Дата рождения</h3>
+            <input type="date" name="dateOfBirth" value="2021-01-01">
+        </label>
+        <label>
+            <h3>Электронная почта</h3>
+            <input type="email" name="email" value="pochta@pochtes.ru" placeholder="Email">
+        </label>
+        <label>
+            <h3>Телефон</h3>
+            <input type="tel" name="phone" value="+71234567890" placeholder="Телефон">
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Отправить">
+        <input id="reset" type="button" value="Сброс">
+    </form>
 </main>
 </body>
 </html>
+
+<script>
+    let reset = document.getElementById("reset");
+
+    reset.onclick = () => {
+        window.location.reload();
+    };
+</script>
