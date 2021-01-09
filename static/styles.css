@@ -17,13 +17,52 @@ h1 {
     font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-top: 0;
+    margin-bottom: 10px;
     font-size: 50px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: rgba(173, 38, 164, 0.67);
+}
+
+label {
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+input, select {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type=reset] {
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(173, 30, 24, 0.88);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+input[type=submit] {
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(173, 38, 164, 0.67);
+    outline: none;
+    border: none;
+    color: white;
+
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 3px;
 }
 
 .error {
-    color: rgba(173,30,24,0.88);
+    color: rgba(173, 30, 24, 0.88);
 }
 
 .orders {
