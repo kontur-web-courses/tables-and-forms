@@ -1,5 +1,6 @@
 body {
-    background-color: #F2F2F2;
+    font-family: "Roboto", sans-serif;
+    background-color: #c4aef7;
 }
 
 main {
@@ -19,7 +20,7 @@ h1 {
     margin-top: 0;
     font-size: 50px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: #6B41D1;
 }
 
 .error {
@@ -28,4 +29,59 @@ h1 {
 
 .orders {
     margin: 20px 0;
+}
+
+form {
+    margin: 30px 0;
+    padding: 20px 40px 40px 40px;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #6B41D1;
+    border-radius: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #68607a;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+    display: block;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+.agree-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #6B41D1;
+}
+
+button {
+    background: #C9A0FE;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid #6B41D1;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+}
+
+input {
+    border: 2px solid #6B41D1;
+}
+
+select {
+    border: 2px solid #6B41D1;
 }

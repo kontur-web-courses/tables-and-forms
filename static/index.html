@@ -8,9 +8,50 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
+    
     <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <label for="name">Имя питомца:</label>
+        <input type="text" id="name" name="name" placeholder="Бобик" required>
 
+        <label for="petType">Тип питомца:</label>
+        <select id="petType" name="petType">
+            <option selected value="dog">Собачка</option>
+            <option value="cat">Котик</option>
+            <option value="tiger">Тигр</option>
+        </select>
+
+        <label> Пол питомца:
+            <div class="agree-text">
+                <input type="radio" name="gender" id="male" value="boy" checked>Мальчик
+                <input type="radio" name="gender" id="female" value="girl">Девочка
+                <input type="radio" name="gender" id="unknown" value="none">Не важно
+            </div>
+        </label>
+
+        <label for="eyeColor">Цвет глаз:</label>
+        <input type="color" name="eyeColor" id="eyeColor" required>
+
+        <label for="tailLength">Длина хвоста (см):</label>
+        <input type="number" id="tailLength" name="tailLength" placeholder="10">
+
+        <label for="dateOfBirth">Дата рождения:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+
+        <label for="phone">Ваш номер телефона:</label>
+        <input type="tel" name="phone" id="phone" value="+7(___)___-__-__">
+
+        <label class="agree-text">
+            <input type="checkbox" name="rules" id="rules" value="true" required>Я ознакомился с правилами и согласен с условиями
+        </label>
+
+        <button type="submit">Найти</button>
+        <button type="reset">Сбросить</button>
+    </form>
 </main>
+<script src="formCheck.js"></script>
 </body>
 </html>
