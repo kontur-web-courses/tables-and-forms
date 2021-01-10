@@ -9,8 +9,58 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
 
+        <label for="petType">
+            Type:
+        </label>
+        <select name="petType" id="petType">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="hamster">Hamster</option>
+            <option selected value="crocodile">Pocket Crocodile</option>
+        </select>
+    
+        <p> Sex:</p>
+        <div>
+            <label>
+                <input type="radio" name="gender" value="boy" checked>
+                Boy
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="girl">
+                Girl
+            </label>
+        </div>
+
+        <label for="eyeColor"> Eye Color:</label>
+        <input type="color" name="eyeColor" id="eyeColor" value="#ED43A6">
+        <br><br>    
+        <label for="tailLength"> Tail Length: </label>
+        <input type="range" min="7" max="120" name="tailLength" id="tailLength">
+        <br><br>
+        <label for="ownerName"> Your Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" value="Anon" id="ownerName">
+        <br><br>
+        <label for="dob"> DOB:</label>
+        <input type="date" name="dateOfBirth" value="2000-01-01" id="dob">
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" name="email" value="dude_get_10minutesmail_at_least@hmmmail.com" placeholder="Enter your email" id="email">
+        <br><br>
+        <label for="phone"> Phone:</label>
+        <input type="tel" name="phone" value="+0" placeholder="Enter your phone" id="phone">
+        <br><br>
+        <label for='rules'>Terms of service:</label>
+        <input type="checkbox" name="rules" value=true checked id='rules'>
+        <br><br>
+
+        <input type="submit" value="Done!">
+        <br><br>
+        <input type="reset" name="reset" value="Reset!"><br><br>
+
+    </form>
 </main>
 </body>
 </html>
