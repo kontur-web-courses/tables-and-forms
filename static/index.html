@@ -9,7 +9,42 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <p><label>Тип питомца: <select name="petType">
+            <option value='cat' selected>Кошки</option>
+            <option value='dog'>Собаки</option>
+            <option value='tiger'>Тигры</option>
+        </select></label></p>
+
+        <p><label>Пол питомца: 
+            <input name="gender" type="radio" value="boy" checked> Мальчик
+            <input name="gender" type="radio" value="girl"> Девочка
+            <input name="gender" type="radio" value="none"> Не важно
+        </label></p>
+
+        <p><label>Цвет глаз: <input type='color' name="eyeColor" value="#00000"></label></p>
+
+        <p><label>Длина хвоста (см): <input name="tailLength" type="number" min="0" max="70" value="15"></label></p>
+
+        <p><label>Имя: <input name="name" type="text" min="3" max="50" placeholder="Бобик"></label></p>
+
+        <p><label>Дата рождения: 
+            <input name="dateOfBirth" type="date" value="2018-07-22" min="1900-01-01" max="2020-12-12">
+        </label></p>
+
+        <p><label>Email:
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+        </label></p>
+
+        <p><label>Номер телефона: 
+            <input name="phone" type='tel' placeholder="79041777777">
+        </label></p>
+
+        <p><label>Я ознакомился с правилами и согласен с условиями <input name="rules" type="checkbox" value="true" checked></label></p>
+
+        <p><input type="submit" value="Найти друга"></p>
+        <p><button type="reset">Я передумал</button></p>
+    </form>
 
 </main>
 </body>
