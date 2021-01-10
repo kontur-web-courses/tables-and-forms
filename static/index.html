@@ -1,16 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 <main>
-    <h1>Найди себе друга!</h1>
+    <h1>Найди себе друга!</h1>	    <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
 
-</main>
-</body>
-</html>
+    <form action="/pets/orders" method="POST">
+        <p><label>Animal type: <select name="petType">
+            <option value='cat' selected>Cats</option>
+            <option value='dog'>Dogs</option>
+            <option value='tiger'>Tigers</option>
+            <option value='hampter'>Hampters</option>
+        </select></label></p>
+
+        <p><label>Gender: 
+            <input name="gender" type="radio" value="boy" checked> male
+            <input name="gender" type="radio" value="girl"> female
+        </label></p>
+
+        <p><label>Eye color: <input type='color' name="eyeColor" value="#e66465"></label></p>
+
+        <p><label>Tail length: <input name="tailLength" type="number" min="7" max="120" value="7"></label></p>
+
+        <p><label>Name: <input name="name" type="text" min="3" max="50" value="Max"></label></p>
+
+        <p><label>Date of Birth: 
+            <input name="dateOfBirth" type="date" value="1900-01-01" min="1900-01-01" max="2021-01-04">
+        </label></p>
+
+        <p><label>Email: <input name="email" type='email' value="example@inter.net"></label></p>
+
+        <p><label>Phone number: <input name="phone" type='tel' value="89120000000"></label></p>
+
+        <p><label>I accept the agreement <input name="rules" type="checkbox" value="true" checked></label></p>
+
+        <p><input type="submit" value="Send"></p>
+
+        <p><button type="reset">Reset</button></p>
+    </form>
+
+
+</main>	</main>
+</body>	</body>
