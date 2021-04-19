@@ -29,3 +29,22 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+form {
+    margin: 30px 0;
+    border: 3px dotted #ddd;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+    display: block;
+}
+
+textarea {
+    vertical-align: top;
+}
