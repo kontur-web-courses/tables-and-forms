@@ -8,8 +8,56 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <label>
+            Имя
+            <input type="text" name="name" value="Егор Егоров">
+        </label>
+        <label>
+            Phone
+            <input type="tel" name="phone" value="+7999999999">
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" value="super@girl">
+        </label>
+        <label>
+            petType
+            <input type="radio" name="petType" value="cat" checked> Cat
+            <input type="radio" name="petType" value="dog"> Dog
+            <input type="radio" name="petType" value="tiger"> Tiger
+        </label>
+        <label>
+            gender
+            <select name="gender">
+                <option value="boy">Boy</option>
+                <option value="girl">Girl</option>
+                <option value="none">None</option>
+            </select>
+        </label>
+        <label>
+            dateOfBirth
+            <input type="date" name="dateOfBirth" value="2005-11-11">
+        </label>
+        <label>
+            eyeColor
+            <input type="color" name="eyeColor">
+        </label>
+        <label>
+            tailLength
+            <input type="number" name="tailLength" value="20">
+        </label>
+        <label>
+            rules
+            <input type="checkbox" name="rules" value="true" checked required>
+        </label>
+        <label>
+            <input type="submit">
+        </label>
+        <label>
+            <input type="reset" name="reset">
+        </label>
+    </form>
 
 </main>
 </body>

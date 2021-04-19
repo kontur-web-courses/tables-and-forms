@@ -26,6 +26,17 @@ h1 {
     color: rgba(173,30,24,0.88);
 }
 
+label {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+label input,
+label select {
+    margin-left: 10px;
+}
+
 .orders {
     margin: 20px 0;
 }
