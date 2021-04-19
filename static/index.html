@@ -12,9 +12,14 @@
     <form action="/pets/orders" method="post">
         <fieldset>
             <label><input type="text" name="petType" id="petType">Тварь</label>
-            <>
-            <label><input type="text" name="petType" id="petType">Тварь</label>
-            <label><input type="text" name="petType" id="petType">Тварь</label>
+            <input type="radio" name="gender" value="male"> Самец
+            <br>
+            <input type="radio" name="gender" value="female"> Самка
+            <br>
+            <input type="radio" name="gender" value="undecided" checked> Неизвестен
+            <br>
+            <label><input type="text" name="eyeColor" id="eyeColor">Цвет глаз</label>
+            <label><input type="number" name="tailLength" id="tailLength">Длина хвоста</label>
 
 
             <input type="submit">
