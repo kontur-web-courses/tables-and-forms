@@ -9,7 +9,38 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form method="post" action="/pets/orders">
+        <select name="petType">
+            <option value="cat" selected>Cat</option>
+            <option value="dog">Dog</option>
+            <option value="tiger">Tiger</option>
+        </select>
+        <br/>
+        <label name="gender"> Пол животного:
+            <input type="radio" name="boy" required> Male
+            <input type="radio" name="girl"> Female
+            <input type="radio" name="none"> Бесполый
+        </label>
+        <br>
+        <label> Цвет глаз
+            <input required type="color" name="eyeColor" placeholder="Цвет глаз">
+        </label>
+        <br/>
+        <label>
+            <input type="number" name="tailLength" placeholder="Длина хвiста" required>
+        </label>
+        <br/>
+        <input required type="text" name="name" placeholder="Ваше имя">
+        <br/>
+        <input required type="date" name="dateOfBirth" placeholder="Дата рождения">
+        <input required type="email" name="email" placeholder="Email">
+        <input required type="tel" name="phone" placeholder="Номер телефона">
+        <input type="checkbox" required name="rules">Я согласен взять домой котю
+
+        <br/>
+        <br/>
+        <button>Submit</button>
+    </form>
 
 </main>
 </body>
