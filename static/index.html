@@ -11,16 +11,29 @@
 
     <form action="/pets/orders" method="post">
         <fieldset>
-            <label><input type="text" name="petType" id="petType">Тварь</label>
-            <input type="radio" name="gender" value="male"> Самец
+            <label>
+                <select name="petType">
+                    <option value="cat" selected>Кошка</option>
+                    <option value="dog">Собака</option>
+                    <option value="tiger">Тигер</option>
+                </select>
+                Тварь
+            </label>
+            <input type="radio" name="gender" value="boy"> Самец
             <br>
-            <input type="radio" name="gender" value="female"> Самка
+            <input type="radio" name="gender" value="girl"> Самка
             <br>
-            <input type="radio" name="gender" value="undecided" checked> Неизвестен
+            <input type="radio" name="gender" value="none" checked> Неизвестен
             <br>
-            <label><input type="text" name="eyeColor" id="eyeColor">Цвет глаз</label>
-            <label><input type="number" name="tailLength" id="tailLength">Длина хвоста в см</label>
-            <label><input type="text" name="petName" id="petName">Имя скотины</label>
+            <label><input type="color" name="eyeColor" id="eyeColor">Цвет глаз</label>
+            <label><input type="number" name="tailLength" id="tailLength" max="120" min="3" required>Длина хвоста в см</label>
+            <label><input type="text" name="name" id="name" required maxlength="50" minlength="3">Имя скотины</label>
+            <label><input type="date" name="dateOfBirth" id="dateOfBirth" required>Дата скотины</label>
+            <label><input type="email" name="email" id="email" required>Мыло скотины</label>
+            <label><input type="tel" name="phone" id="phone" required>Номер скотины</label>
+            <input type="checkbox" name ="rules" value="true">
+            Я согласен с условиями и готов продать душу дьяволу
+            <br>
 
             <input type="submit">
 
