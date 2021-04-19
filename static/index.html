@@ -9,7 +9,54 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="pets/orders" method="POST">
+        <label>
+            Тип животного
+            <select name="petType">
+                <option value="cat" selected>Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        <label>
+            Пол
+            <select name="gender">
+                <option value="boy" selected>Мальчик</option>
+                <option value="girl">Девочка</option>
+                <option value="none">-</option>
+            </select>
+        </label>
+        <label for="eyeColor">
+            Цвет глаз
+            <input type="color" name="eyeColor" id="eyeColor">
+        </label>
+        <label for="tailLength">
+            Длина хвоста
+            <input type="number" name="tailLength" id="tailLength" min="7" max="120">
+        </label>
+        <label for="name">
+            Имя хозяина
+            <input type="text" name="name" id="name" minlength="3" maxlength="50">
+        </label>
+        <label for="dateOfBirth">
+            Дата рождения
+            <input type="date" name="dateOfBirth" id="dateOfBirth">
+        </label>
+        <label for="email">
+            email
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        </label>
+        <label for="phone">
+            Телефон
+            <input type="tel" name="phone" id="phone" placeholder="88005553535" required>
+        </label>
+        <label for="rules">
+            Я согласен на...
+            <input type="radio" name="rules" value="true" id="rules" required>
+        </label>
+        <input type="reset" value="Сбросить">
+        <input type="submit" value="Отправить">
+    </form>
 
 </main>
 </body>
