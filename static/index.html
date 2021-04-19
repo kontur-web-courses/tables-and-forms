@@ -12,10 +12,15 @@
     <!--Форму размещай тут-->
     <form method="post" action="/pets/orders">
         <label>
-            <input type="text" name="petType" placeholder="">
+            <input type="text" name="name" placeholder="name" required>
         </label>
         <label>
-            <input type="text" name="gender">
+            <input type="radio" name="petType" id="cat" required value="cat">Cat
+            <input type="radio" name="petType" id="dog" required value="dog">Dog
+            <input type="radio" name="petType" id="tiger" required value="tiger">Tiger
+        </label>
+        <label>
+            <input type="text" name="gender" placeholder="gender" required>
         </label>
         <label>
             <input type="text" name="eyeColor" placeholder="Eye Color" required>
