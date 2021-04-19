@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
@@ -8,9 +8,52 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <form action="/pets/orders" method="POST">
+        <label>
+            Имя хозяина <input type="text" name="name" placeholder="Введите ваше имя" value="Иванов Иван">
+        </label><br>
+        <label>
+            Пол питомца
+            <select name="gender">
+                <option value="girl" selected>Женский</option>
+                <option value="boy">Мужской</option>
+                <option value="none">Бесполый</option>
+            </select>
+        </label><br>
+        <label>
+            Дата рождения <input type="date" name="dateOfBirth" value="2021-01-01">
+        </label><br>
+        <label>
+            Email <input type="email" name="email" value="ivanov@mail.ru">
+        </label><br>
+        <label>
+            Телефон <input type="tel" name="phone" value="89000000000">
+        </label><br>
+        <label>
+            Длина хвоста <input type="number" name="tailLength" value="7">
+        </label><br>
+        <label>
+            Цвет глаз <input type="color" name="eyeColor">
+        </label><br>
+        <label>
+            <input type="radio" name="petType" value="cat" checked> Котик
+        </label><br>
+        <label>
+            <input type="radio" name="petType" value="dog"> Собачка
+        </label><br>
+        <label>
+            <input type="radio" name="petType" value="tiger"> Тигр
+        </label><br>
+        <label>
+            <input type="checkbox" name="rules" value="true" checked required> Я согласен с условиями
+        </label><br>
+        <label>
+            <input type="reset" value="Очистить">
+        </label><br>
+        <label>
+            <input type="submit">
+        </label><br>
+    </form>
 </main>
 </body>
 </html>
