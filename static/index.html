@@ -8,8 +8,59 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
+    <form method="post" action="/pets/orders">
+        <label>
+            Тип питомца
+            <select name="petType">
+                <option value="dog">Собака</option>
+                <option value="cat">Кот</option>
+                <option value="hamster">Хомяк</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="gender" value="boy" checked>Самец
+        </label>
+        <label>
+            <input type="radio" name="gender" value="girl">Самка
+        </label>
+        <br>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" value="#8B4513">
+        </label>
+        <br>
+        <label>
+            Длина хвоста, см
+            <input type="number" name="tailLength" value="7" min="7" max="120">
+        </label>
+        <br>
+        <label>
+            Имя
+            <input type="text" name="name" placeholder="Введите имя" minlength="3" maxlength="50">
+        </label>
+        <br>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth">
+        </label>
+        <br>
+        <label>
+            Email
+            <input type="email" name="email" placeholder="Введите email">
+        </label>
+        <br>
+        <label>
+            Номер телефона
+            <input type="tel" name="phone" placeholder="Введите номер телефона">
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="rules" value="true">Я согласен с правилами
+        </label>
+        <br>
+        <input type="submit" name="submit" value="Зарегистрироваться">
+    </form>
 
 </main>
 </body>
