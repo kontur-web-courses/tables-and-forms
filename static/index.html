@@ -8,9 +8,59 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <form action="/pets/orders" method="post">
+        <label>
+            Тип зверья
+            <select name="petType">
+                <option value="dog">Собачка</option>
+                <option value="cat">Котик</option>
+                <option value="tiger" selected>Тигор</option>
+            </select>
+        </label>
+        <label>
+            Мальчик или девочка?
+            <label>
+                <input type="radio" value="boy" name="gender"> Мальчик
+            </label>
+            <label>
+                <input type="radio" value="girl" name="gender"> Девочка
+            </label>
+            <label>
+                <input type="radio" value="none" checked name="gender"> Я нинаю
+            </label>
+        </label>
+        <label>
+            Имя
+            <input type="text" name="name" value="Вася">
+        </label>
+        <label>
+            Цвет глазонек
+            <input type="color" name="eyeColor">
+        </label>
+        <label>
+            Длина хвоста (если есть)
+            <input type="number" name="tailLength" value="7" min="7" max="120">
+        </label>
+        <label>
+            Дата рождения зверья
+            <input type="date" name="dateOfBirth" value="2021-04-19">
+        </label>
+        <label>
+            Почта хозяина
+            <input type="email" name="email" value="shrimp@f.ru">
+        </label>
+        <label>
+            Телефон хозяина
+            <input type="tel" name="phone" required value="880005553535">
+        </label>
+        <label>
+             Согласен
+            <input type="hidden" name="rules" value="true">
+        </label>
+        <label>
+            <input type="submit" name="submit" value="Go!">
+        </label>
+    </form>
 </main>
 </body>
 </html>
