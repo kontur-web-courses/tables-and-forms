@@ -9,7 +9,67 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>
+            Pet Type
+            <select name="petType">
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label><br>
+
+        <label>
+            Gender
+            <select name="gender">
+                <option value="boy">Мальчик</option>
+                <option value="girl">Девочка</option>
+                <option value="none">Не выбрал ещё</option>
+            </select>
+        </label><br>
+
+        <label>
+            Eye color
+            <input type="color" name="eyeColor" value="#fedcba">
+        </label><br>
+
+        <label>
+            Tail length
+            <input type="number" name="tailLength" min="7" max="120" required>
+        </label><br>
+
+        <label>
+            Name:
+            <input type="text" name="name" minlength="3" maxlength="50" placeholder="Бибок" required>
+        </label><br>
+
+        <label>
+            Date of birth:
+            <input type="date" name="dateOfBirth" required>
+        </label><br>
+
+        <label>
+            Email:
+            <input type="email" name="email" placeholder="bibock@ya.ya">
+        </label><br>
+
+        <label>
+            Phone number:
+            <input type="tel" name="phone">
+        </label><br>
+
+        <label>
+            <input type="hidden" name="rules" value="true">
+        </label><br>
+
+        <label>
+            <input type="reset">
+        </label>
+
+        <label>
+            <input type="submit">
+        </label>
+    </form>
 
 </main>
 </body>
