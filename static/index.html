@@ -15,32 +15,37 @@
             <input type="text" name="name" placeholder="name" required>
         </label>
         <label>
+            Pet
             <input type="radio" name="petType" id="cat" required value="cat">Cat
             <input type="radio" name="petType" id="dog" required value="dog">Dog
             <input type="radio" name="petType" id="tiger" required value="tiger">Tiger
         </label>
         <label>
-            <input type="text" name="gender" placeholder="gender" required>
+            Gender
+            <input type="radio" name="gender" id="boy" required value="boy">Boy
+            <input type="radio" name="gender" id="girl" required value="girl">Girl
+            <input type="radio" name="gender" id="none" required value="none">None
         </label>
         <label>
-            <input type="text" name="eyeColor" placeholder="Eye Color" required>
+            <input type="color" name="eyeColor" placeholder="Eye Color" required>
         </label>
         <label>
-            <input type="text" name="tailLength" placeholder="Tail Length" required>
+            <input type="number" name="tailLength" placeholder="Tail Length" required min="7" max="120">
         </label>
         <label>
-            <input type="text" name="dateOfBirth" placeholder="Date of Birth" required>
+            <input type="date" name="dateOfBirth" placeholder="Date of Birth" required>
         </label>
         <label>
-            <input type="text" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required>
         </label>
         <label>
-            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
         </label>
         <label>
-            <input type="text" name="rules" placeholder="Rules" required>
+            <input type="checkbox" name="rules" placeholder="Rules" required checked value="true">Rules
         </label>
         <input type="submit">
+        <input type="reset">
     </form>
 </main>
 </body>
