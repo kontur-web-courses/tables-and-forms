@@ -33,13 +33,11 @@
         </label>
         <br>
         <label>
-            Длина хвоста
-            <input type="number" name='tailLength' min="7" max="120">
+            <input type="number" placeholder="Длина хвоста" name='tailLength' min="7" max="120" style="width: 100px;">
         </label>
         <br>
         <label>
-            Имя животного
-            <input type="text" min="3" max="50" name='name'>
+            <input type="text" placeholder="Имя животного" min="3" max="50" name='name'>
         </label>
         <br>
         <label>
@@ -54,15 +52,15 @@
         <br>
         <label>
             Номер телефона
-            <input type="tel" name='phone' required>
+            <input type="tel" name='phone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
         </label>
         <br>
         <label>
             Рулет?
-            <input type="checkbox" name='rules' value="true">
+            <input type="checkbox" name='rules' value="true" checked>
         </label>
         <br>
-        <input type="submit">
+        <input type="submit"> <input type="reset">
     </form>
 </main>
 </body>
