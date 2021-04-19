@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <main>
+        <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+        <form action="/pets/orders" method="POST">
 
-</main>
+            <p>
+                <label for="gender">Пол</label>
+                <input type="radio" name="gender" value="boy" id="gender"> Male
+                <input type="radio" name="gender" value="girl" id="gender"> Female
+                <input type="radio" name="gender" value="none" id="gender"> None
+            </p>
+
+            <p>
+                <label for="eyeColor">Цвет глаз</label>
+                <input type="color" value="цвет" name="eyeColor">
+            </p>
+
+            <p>
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <select name="petType">
+                    <option value="dog" selected>Собака</option>
+                    <option value="cat">Кошка</option>
+                    <option value="tiger">Тигр</option>
+                </select>
+            </p>
+            <p>
+                <label for="dateOfBirth"> Дата рождения</label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+            </p>
+
+            <p>
+                <label for="tailLength"> Длина хвоста</label>
+                <input type="number" step="1" name="tailLength" id="tailLength">
+            </p>
+
+            <p>
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone">
+            </p>
+
+
+            <p>
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+
+            <p>
+                <input type="checkbox" name="rules" checked> Я согласен с условиями
+            </p>
+
+            <p>
+                <button name="submit">
+                    Зарегистрироваться
+                </button>
+            </p>
+
+        </form>
+
+    </main>
 </body>
+
 </html>
