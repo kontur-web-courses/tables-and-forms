@@ -8,9 +8,48 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <form method="post" action="/pets/orders" id="animalForm">
+        <label for="petType">Тип животного</label>
+        <select id="petType" name="petType">
+            <option value="cat">Кошка</option>
+            <option value="dog">Собака</option>
+            <option value="tiger">Морской тигр по имени Натан</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Пол</legend>
+            <label><input type="radio" name="gender" value="boy"> Самец</label>
+            <br>
+            <label><input type="radio" name="gender" value="girl"> Самка</label>
+            <br>
+            <label><input type="radio" name="gender" value="none"> Гермафродит</label>
+        </fieldset>
+        <br>
+            <label for="eyeColor">Цвет глаз</label>
+            <input id="eyeColor" name="eyeColor" type="color">
+        <br>
+            <label for="tailLength">Длина хвоста</label>
+            <input id="tailLength" name="tailLength" type="number" min="7" max="120">
+        <br>
+            <label for="name">Кличка</label>
+            <input id="name" name="name" type="text" minlength="3" maxlength="50">
+        <br>
+            <label for="dateOfBirth">Дата рождения</label>
+            <input id="dateOfBirth" name="dateOfBirth" type="date">
+        <br>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        <br>
+            <label for="phone">Номер телефона</label>
+            <input id="phone" name="phone" type="tel">
+        <br>
+            <label for="rules">Правила</label>
+            <input id="rules" name="rules" type="checkbox" value="true">
+        <br>
+            <input type="reset" id="reset">
+        <br>
+            <input type="submit" name="submit" value="Отправить">
+    </form>
 </main>
 </body>
 </html>
