@@ -9,7 +9,70 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <p>
+        <label for="petType">Тип животного:</label>
+        <select name="petType" id="petType">
+            <option value="cat">Кошка</option>
+            <option value="dog">Собака</option>
+            <option value="monkey">Обезьяна</option>
+        </select>
+        </p>
+
+        <p>
+            <input type="radio" name="gender" value="male" id="g1"><label for="g1">Мальчик</label>
+            <input type="radio" name="gender" value="female" id="g2"><label for="g2">Девочка</label>
+            <input type="radio" name="gender" value="undecided" id="g3"><label for="g3">Без разницы</label>
+        </p>
+
+        <p>
+            <input type="color" id="c1" name="eyeColor"><label for="c1"> Цвет глаз</label>
+        </p>
+
+        <p>
+            <input type="range" list="tickmarks" name="tailLength">
+
+            <datalist id="tickmarks">
+                <option value="0" label="5см" class="show">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="20см" class="show">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="45см" class="show">
+            </datalist>
+
+            <label for="tickmarks"> Длина хвоста</label>
+        </p>
+
+        <p>
+            <input type="text" id="n1" name="name"><label for="n1"> Имя питомца</label>
+        </p>
+
+        <p>
+            <input type="date" id="dateOfBirth" name="dateOfBirth"><label for="dateOfBirth"> Дата рождения</label>
+        </p>
+
+        <p>
+            <input type="email" id="email" name="email"><label for="email"> Введите ваш e-mail</label>
+        </p>
+
+        <p>
+            <input type="tel" id="phone" name="phone"><label for="phone"> Номер телефона</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="r1" name="rules" value="r1"><label for="r1">Правило 1</label>
+            <input type="checkbox" id="r2" name="rules" value="r2"><label for="r2">Правило 2</label>
+            <input type="checkbox" id="r3" name="rules" value="r3"><label for="r3">Правило 3</label>
+        </p>
+
+        <input type="submit">
+    </form>
 
 </main>
 </body>
