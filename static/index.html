@@ -8,9 +8,64 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <form action="/pets/orders" method="POST">
+        <label>
+            Pet type
+            <select name="petType">
+                <option name="dog" value="dog">Dog</option>
+                <option name="cat" value="cat">Cat</option>
+                <option name="tiger" value="tiger">Tiger</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            Gender
+            <input type="radio" name="gender" value="boy">Boy
+            <input type="radio" name="gender" value="girl">Girl
+            <input type="radio" name="gender" value="none">None
+        </label>
+        <label>
+        <br>
+        <label>
+            Eye color
+            <input type="color" name="eyeColor" value="#ffffff">
+        </label>
+        <br>
+        <label>
+            Tail length
+            <input type="number" min="7" max="120" name="tailLength">
+        </label>
+        <br>
+        <label>
+            Name
+            <input type="text" minlength="3" maxlength="50" name="name" value="Dan">
+        </label>
+        <br>
+        <label>
+            Date of birth
+            <input type="date" name="dateOfBirth" value="0001-01-01">
+        </label>
+        <br>
+        <label>
+            Email
+            <input type="email" name="email" placeholder="example@yahoo.com" value="example@yahoo.com">
+        </label>
+        <br>
+        <label>
+            Phone number
+            <input type="tel" name="phone" placeholder="88005553535" value="88005553535">
+        </label>
+        <br>
+        <label>
+            Rules
+            <input type="checkbox" name="rules" value="true">
+        </label>
+        <br>
+        <label>
+            <input type="reset"  value="reset">
+        </label><br>
+        <input type="submit" value="submit">
+    </form>
 </main>
 </body>
 </html>
