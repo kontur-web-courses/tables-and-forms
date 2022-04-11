@@ -8,9 +8,54 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <div>
+            <label>Отправить запрос</label>
+            <button>Post</button>
+        </div>
+        <div>
+            <label>Выберите тип животного</label>
+            <input name="petType" type="radio" value="cat" checked>Мяв-мявыч
+            <input name="petType" type="radio" value="dog">Гав-гавыч
+            <input name="petType" type="radio" value="tiger"> Тигар
+        </div>
+        <div>
+            <label>Выбери пол животного</label>
+            <input name="gender" type="checkbox" value="boy" checked> Мужчина
+            <input name="gender" type="checkbox" value="girl"> Женщина
+            <input name="gender" type="checkbox" value="none"> Не определился...
+        </div>
+        <div>
+            <label>Выберите цвет глаз</label>
+            <input name="eyeColor" type="color">
+        </div>
+        <div>
+            <label>Выберите длину хвоста</label>
+            <input name="tailLength" type="number" min="7" max="120">
+        </div>
+        <div>
+            <label>Выберите имя питомца</label>
+            <input name="name" type="text" >
+        </div>
+        <div>
+            <label>Выберите дату рождения</label>
+            <input name="dateOfBirth" type="text">
+        </div>
+        <div>
+            <label>Введите email</label>
+            <input name="email" type="text">
+        </div>
+        <div>
+            <label>Введите номер телефона</label>
+            <input name="phone" type="text">
+        </div>
+        <div>
+            <label>Введите правила</label>
+            <input name="rules" type="text">
+        </div>
+    </form>
 
 </main>
 </body>
+</html>
 </html>
