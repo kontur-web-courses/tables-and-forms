@@ -8,8 +8,51 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST"> 
+        <label>
+            <b>name</b>
+            <input type="text" name="name" placeholder="enter name" minlength="3" maxlength="50" required>
+        </label>
+        <label>
+            <b>tailLength</b>
+            <input type="number" name="tailLength" min="7" max="120" placeholder="enter tail lenght" required>
+        </label>
+    
+        </label>
+            <input name="gender" type="radio" value="boy"> boy
+            <input name="gender" type="radio" value="girl"> girl
+            <input name="gender" type="radio" value="none"> none
+        <label>
+        <label>
+            <b>Email</b>
+            <input type="email" name="email" required placeholder="enter email">
+        </label>
+        <label>
+            <b>dateOfBirth</b>
+            <input type="date" name="dateOfBirth" required>
+        </label>
+        <label>
+            <b>phone</b>
+            <input type="tel" name="phone" required placeholder="enter phone number">
+        </label>
+        <label>
+            <b>eyeColor</b>
+            <input type="color" name="eyeColor" required>
+        </label>
+        <label>
+            <b>petType</b>
+            <select name="petType" required>
+                <option value="dog" selected>Собака</option>
+                <option value="cat">Кот</option>
+                <option value="tiger">Таракан Валера</option>
+            </select>
+        </label>
+        <label>
+            <input type="checkbox" name="rules" value="true" required> Я согласен с условиями
+        </label>
+        <p><button>хачу животное</button></p>
+        <p><input type="reset" value="Кнопка сброса формы"></p>
+    </form>
 
 </main>
 </body>
