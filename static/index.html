@@ -9,7 +9,30 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" required value="2022-04-11">
+        </label>
+
+        <label>
+            Почта
+            <input type="email" name="email" required value="a@b.c">
+        </label>
+
+        <label>
+            Телефон
+            <input type="tel" name="phone" required value="+10000000000">
+        </label>
+
+        <label>
+            Правила содержания
+            <input type="checkbox" name="rules" value="domestic" selected>Содержать дома<br/>
+            <input type="checkbox" name="rules" value="noMeat">Не кормить мясом<br/>
+        </label>
+
+        <input type="submit" name="submit" value="Sus">
+    </form>
 
 </main>
 </body>
