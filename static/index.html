@@ -9,7 +9,7 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <form method="post" action="/pets/orders">
+    <form method="post" action="/pets/orders" id="animalForm">
         <div>
             <label for="petType">Тип животного</label>
             <select id="petType" name="petType">
@@ -69,6 +69,10 @@
         <div>
             <label for="rules">Правила</label>
             <input id="rules" name="rules" type="checkbox" value="true">
+        </div>
+        <br>
+        <div>
+            <input type="reset" id="reset">
         </div>
         <br>
         <div>
