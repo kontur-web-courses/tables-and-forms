@@ -9,7 +9,50 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>
+            <b>Pet type</b><br>
+            <label><input type ="radio" name="petType" value="cat" checked>Cat</label><br>
+            <label><input type="radio" name="petType" value="dog">Dog</label><br>
+            <label><input type="radio" name="petType" value="tiger">Tiger</label><br>
+        </label>
+        <label>
+            <b>Gender</b><br>
+            <select name="gender" multiple>
+                <option value="boy">Boy</option>
+                <option value="girl">Girl</option>
+                <option value="none" selected>None</option>
+            </select>
+        </label><br>
+
+        <label>
+            <b>Eye Color</b><br>
+            <input name="eyeColor" type="color">
+        </label><br>
+        <label>
+            <b>Tail length</b><br>
+            <input name="tailLength" type="range" min="7" max="120" oninput="this.nextElementSibling.value = this.value">
+            <output>24</output>
+        </label><br>
+        <label>
+            <b>Name</b><br>
+            <input name="name" type="text" minlength="3" maxlength="50" placeholder="Your name" value="Your name" required>
+        </label><br>
+        <label>
+            <b>Date</b><br><input name="dateOfBirth" type="date" value="2022-04-10" required>
+        </label><br>
+        <label>
+            <b>Email</b><br><input name="email" type="email" placeholder="example@domen.com" value="example@domen.com" required>
+        </label><br>
+        <label>
+            <b>Phone</b><br><input name="phone" type="tel" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+124-45-678" value="+124-45-678" required>
+        </label><br>
+        <label>
+            <b>Accept rules</b><input name="rules" type="checkbox" value="true" checked required>
+        </label><br>
+        <label><input type="submit" value="Submit"></label><br>
+        <label><input type="reset"></label>
+    </form>
 
 </main>
 </body>
