@@ -8,8 +8,35 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
+    <form class="guruweba_example_form" name="feedback" method="POST" action="/pets/orders">
+        <div>petType</div>
+        <select name="petType">
+            <option>cat</option>
+            <option>dog</option>
+            <option>tiger</option>
+        </select>
+        <div>gender</div>
+        <select name="gender">
+            <option>boy</option>
+            <option>girl</option>
+            <option>none</option>
+        </select>
+        <div>eyeColor</div>
+        <input type="color" name="eyeColor">
+        <div>tailLength</div>
+        <input type="number" name="tailLength" min="7" max="120" value="7">
+        <div>name</div>
+        <input type="text" name="name" minlength="3" maxlength="50" value="123">
+        <div>dateOfBirth</div>
+        <input type="date" name="dateOfBirth" value="2018-07-22">
+        <div>email</div>
+        <input type="email" name="email" value="1@1">
+        <div>phone</div>
+        <input type="text" name="phone" required value="1">
+        <div>rules</div>
+        <input type="checkbox" name="rules" value="true" checked>
+        <input type="submit" name="submit_btn" value="Отправить">
+    </form>
 
 </main>
 </body>
