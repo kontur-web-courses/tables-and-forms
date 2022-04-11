@@ -8,33 +8,52 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-    <form class="guruweba_example_form" name="feedback" method="POST" action="/pets/orders">
-        <div>petType</div>
-        <select name="petType">
-            <option>cat</option>
-            <option>dog</option>
-            <option>tiger</option>
-        </select>
-        <div>gender</div>
-        <select name="gender">
-            <option>boy</option>
-            <option>girl</option>
-            <option>none</option>
-        </select>
-        <div>eyeColor</div>
-        <input type="color" name="eyeColor">
-        <div>tailLength</div>
-        <input type="number" name="tailLength" min="7" max="120" value="7">
-        <div>name</div>
-        <input type="text" name="name" minlength="3" maxlength="50" value="123">
-        <div>dateOfBirth</div>
-        <input type="date" name="dateOfBirth" value="2018-07-22">
-        <div>email</div>
-        <input type="email" name="email" value="1@1">
-        <div>phone</div>
-        <input type="text" name="phone" required value="1">
-        <div>rules</div>
-        <input type="checkbox" name="rules" value="true" checked>
+    <form class="petForm" name="feedback" method="POST" action="http://localhost:3000/pets/orders">
+        <label>
+            <br>Животное
+            <br><select name="petType">
+                <option>cat</option>
+                <option>dog</option>
+                <option>tiger</option>
+            </select>
+        </label>
+        <label>
+            <br>Пол
+            <br><select name="gender">
+                <option>boy</option>
+                <option>girl</option>
+                <option>none</option>
+            </select>
+        </label>
+        <label>
+            <br>Цвет глаз
+            <br><input type="color" name="eyeColor">
+        </label>
+        <label>
+            <br>Длина хвоста
+            <br><input type="number" name="tailLength" min="7" max="120" placeholder="Введите длину хвоста">
+        </label>
+        <label>
+            <br>Кличка
+            <br><input type="text" name="name" minlength="3" maxlength="50" placeholder="Введите имя">
+        </label>
+        <label>
+            <br>Дата рождения
+            <br><input type="date" name="dateOfBirth">
+        </label>
+        <label>
+            <br>E-mail
+            <br><input type="email" name="email" placeholder="abc@mail.ru">
+        </label>
+        <label>
+            <br>Номер телефона
+            <br><input type="text" name="phone" required placeholder="Введите номер телефона">
+        </label>
+        <label>
+            <br>Правила
+            <br><input type="checkbox" name="rules" value="true">
+        </label>
+        <input type="reset" value="Reset">
         <input type="submit" name="submit_btn" value="Отправить">
     </form>
 
