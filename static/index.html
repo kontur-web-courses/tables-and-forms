@@ -8,6 +8,52 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="post">
+        <label>
+            Логин
+            <input type="submit" name="Логин">
+        </label>
+        <label>
+            Тип животного
+        <label>
+            <input type="radio" name="petType" value="dog" checked> dog
+        </label>
+        <label>
+            <input type="radio" name="petType" value="cat"> cat
+        </label>
+        <label>
+            <input type="radio" name="petType" value="tiger"> tiger
+        </label>
+        </label>
+        <label>
+            <select name="gender">
+                <option value="boy" selected>boy</option>
+                <option value="girl">girl</option>
+                <option value="none">none</option>
+            </select>
+        </label>
+        <label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth"
+               value="2020-07-22"
+               min="1800-01-01" max="2021-12-31">
+        </label>
+        <label><input type="email" id="email" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></label>
+        <label><input id="phone" type="tel" name="phone" placeholder="phone" /></label>
+        <label><input type="color" name="eyeColor"></label>
+        <label><input type="range" name="tailLength"></label>
+        <label>
+            <input name="name" placeholder="Pet name" minlength="3" maxlength="50">
+        </label>
+        <label>
+            <label>
+            <input type="checkbox" name="rules" value="true" checked> true
+            </label>
+            <label>
+            <input type="checkbox" name="rules" value="false"> false
+            </label>
+        </label>
+        <label><input type="reset" name="reset"></label>
+    </form>
 
     <!--Форму размещай тут-->
 
