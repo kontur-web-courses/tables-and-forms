@@ -9,7 +9,59 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <label>
+            Pet type:<br>
+            <input type="text" name="petType" value="dog">
+        </label><br>
+        <br>
+        <label>
+            Gender:<br>
+            <input type="text" name="gender" placeholder="boy / girl / none" value="none">
+        </label><br>
+        <br>
+        <label>
+            Eye color:<br>
+            <input type="text" name="eyeColor" value="#ffffff">
+        </label><br>
+        <br>
+        <label>
+            Tail length:<br>
+            <input type="text" name="tailLength" value="10">
+        </label><br>
+        <br>
+        <label>
+            Name:<br>
+            <input type="text" name="name", value="Oleg">
+        </label><br>
+        <br>
+        <label>
+            Date of birth:<br>
+            <input type="dame" name="dateOfBirth" placeholder="dd.mm.yyyy" value="01.01.1987">
+        </label><br>
+        <br>
+        <label>
+            Email:<br>
+            <input type="email" name="email" value="address@domain.com">
+        </label><br>
+        <br>
+        <label>
+            Phone:<br>
+            <input type="text" name="phone" value="00000000000">
+        </label><br>
+        <br>
+        <label>
+            Rules:<br>
+            <input type="text" name="rules" value="true">
+        </label><br>
+        <br>
+        <label>
+            Reset to default:<br>
+            <input type="reset"  value="Reset">
+        </label><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 
 </main>
 </body>
