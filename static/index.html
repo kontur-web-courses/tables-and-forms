@@ -4,12 +4,70 @@
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="../checkOrder.js"></script>
 </head>
 <body>
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form method="post" action="/pets/orders">
+        <label>
+            Выбери тип питомца:
+            <select name="petType" size="1" >
+                <option selected value="cat">Кошечька</option>
+                <option value="dog" >Собачька</option>
+                <option value="tiger">Тигруля</option>
+            </select>
+        </label><br>
+
+        <label>Ламинат<br>
+            <input type="radio" name="gender" value="boy">
+            Мальчик
+        </label><br>
+
+        <label>
+            <input type="radio" name="gender" value="girl">
+            Девочка
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="none">
+            Паркет
+        </label><br>
+
+        <label>
+            Цвет глазиков
+            <input type="color" name="eyeColor">
+        </label><br>
+
+        <label>
+            Имя
+            <input type="text" name="name">
+        </label><br>
+        <label>
+            Email
+            <input type="email" name="email">
+        </label><br>
+        <label>
+            Рост
+        <input type="number" name="tailLength">
+        </label><br>
+        <label>
+            Номер телефона
+            <input type="tel" name="phone">
+        </label><br>
+        <label>
+            Я согласен с тобой, ублюдок
+            <input type="checkbox" name="rules" value="true">
+        </label><br>
+        <label>
+            День рождения
+            <input type="date" name="dateOfBirth">
+        </label><br>
+
+        <label>
+            <input type="submit" value="Т ы к а й">
+        </label>
+    </form>
 
 </main>
 </body>
