@@ -9,8 +9,72 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
-
+    <form method="post" action="/pets/orders">
+        <div>
+            <label for="petType">Тип животного</label>
+            <select id="petType" name="petType">
+                <option value="cat">Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </div>
+        <br>
+        <fieldset>
+            <legend>Пол</legend>
+            <div>
+                <label>
+                    <input type="radio" name="gender" value="boy"> Мальчик
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="gender" value="girl"> Девочка
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="gender" value="none"> Небинарная персона
+                </label>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label for="eyeColor">Цвет глаз</label>
+            <input id="eyeColor" name="eyeColor" type="color">
+        </div>
+        <br>
+        <div>
+            <label for="tailLength">Длина хвоста</label>
+            <input id="tailLength" name="tailLength" type="number" max="120" min="7">
+        </div>
+        <br>
+        <div>
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" maxlength="50" minlength="3">
+        </div>
+        <br>
+        <div>
+            <label for="dateOfBirth">День рождения</label>
+            <input id="dateOfBirth" name="dateOfBirth" type="date">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Номер телефона</label>
+            <input id="phone" name="phone" type="tel">
+        </div>
+        <br>
+        <div>
+            <label for="rules">Правила</label>
+            <input id="rules" name="rules" type="checkbox" value="true">
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="submit" value="Отправить">
+        </div>
+    </form>
 </main>
 </body>
 </html>
