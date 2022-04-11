@@ -9,7 +9,79 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>
+            Pet Type
+            <select required="required" name="petType">
+                <option>cat</option>
+                <option>dog</option>
+                <option>tiger</option>
+            </select>
+        </label>
+        <p>
+            <label>
+                Name
+                <input type="text" placeholder="лососевый" name="name" required="required" minlength="3"
+                       maxlength="50"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" value="male"/>
+                Мужчина
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" value="girl"/>
+                Женщина
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" value="none" checked/>
+                Не решил ещё
+            </label>
+        </p>
+        <p>
+            <label>
+                Eye Color
+                <input type="color" name="eyeColor" required="required"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                Tail Length
+                <input type="number" placeholder="100" name="tailLength" required="required" min="7" max="120"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                Date of Birth
+                <input type="date" name="dateOfBirth" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Email
+                <input type="email" name="email" required/>
+            </label>
+        </p>
+        <p>
+            <label>
+                Phone
+                <input type="tel" name="phone" required/>
+            </label>
+        </p>
+        <p>
+            <label>
+                Вы принимаете пользовательское соглашение и ислам
+                <input type="checkbox" name="rules" required="required" value="true"/>
+            </label>
+        </p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="убейся">
+    </form>
 
 </main>
 </body>
