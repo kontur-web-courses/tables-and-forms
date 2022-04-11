@@ -10,6 +10,40 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label name="petType">Pet Type
+            <input type="text" id="petType">
+        </label><br><br>
+        <label name="gender">Gender
+            <select id="gender">
+                <option>м</option>
+                <option>ж</option>
+                <option>хз</option>
+            </select>
+        </label><br><br>
+        <label name="eyeColor">Eye Color
+            <input type="text" id="eyeColor">
+        </label><br><br>
+        <label name="tailLength">Tail Length
+            <input type="number" id="tailLength">
+        </label><br><br>
+        <label name="name">Name
+            <input type="text" id="name">
+        </label><br><br>
+        <label name="dateOfBirth">Date of birth
+            <input type="date" id="dateOfBirth">
+        </label><br><br>
+        <label name="email">Email
+            <input type="email" id="email">
+        </label><br><br>
+        <label name="phone">Phone
+            <input type="tel" id="phone">
+        </label><br><br>
+        <label name="rules">Rules
+            <input type="textarea" id="rules">
+        </label><br><br>
+        <button type="submit">submit</button>
+    </form>
 
 </main>
 </body>
