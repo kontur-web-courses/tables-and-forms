@@ -8,7 +8,6 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
     <form method="post" action="/pets/orders">
         <label>Тип животного
             <select name="type">
@@ -31,15 +30,36 @@
         </label><br>
         <label>Имя
             <input type="text" name="name">
-        </label><br>
-
-        <input name="dateOfBirth">
-        <input name="email">
-        <input name="phone">
-        <input name="rules">
+        </label>
+        <br>
+        <label>
+            <input name="name">
+        </label>
+        <br>
+        <label>
+            Дата рождения:
+            <input type="date" name="dateOfBirth">
+        </label>
+        <br>
+        <label>
+            E-mail:
+            <input type="email" name="email" placeholder="example@findyourfriend.com">
+        </label>
+        <br>
+        <label>
+            Номер телефона:
+            <input type="tel" name="phone" placeholder="+79*********">
+        </label>
+        <br>
+        <label>
+            Правила:
+            <input type="text" name="rules" placeholder="Впишите сюда правила">
+        </label>
+        <br>
+        <label>
+            <input type="reset">
+        </label>
     </form>
-
-    <input type="button" value="default">
 </main>
 </body>
 </html>
