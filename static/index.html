@@ -11,6 +11,93 @@
 
     <!--Форму размещай тут-->
 
+    <form action="/pets/orders" method="POST">
+        <p>
+            <label>
+                Выберете вид животного
+                <select name="petType">
+                    <option value="dog" selected>Собака</option>
+                    <option value="cat">Кошка</option>
+                    <option value="rabbit">Кролик</option>
+                    <option value="pig">Свинка</option>
+                    <option value="rat">Крыска</option>
+                    <option value="snake">Змея</option>
+                    <option value="turtle">Черепаха</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                <input type="radio" name="gender" value="boy" checked> Мальчик
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" value="girl"> Девочка
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" value="hermaphrodite"> Гермафродит
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Цвет глаз
+                <input type="color" name="eyeColor" value="#ffffff">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Длина хвоста
+                <input type="range" name="tailLength" min="0" max="200">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Имя
+                <input name="name" minlength="1" maxlength="50" required placeholder="Ыя">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Дата рождения
+                <input type="date" name="dateOfBirth" value="1900-01-01">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Email
+                <input type="email" name="email" placeholder="sobaka@sobaka.dog">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Телефон
+                <input type="tel" name="phone" placeholder="8-912-345-67-89">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" name="rules" value="true" checked> Я согласен c правилами и буду любить и баловать своего питомца
+            </label>
+        </p>
+
+        <p>
+            <input type="reset" value="Сбросить">
+            <input type="submit">
+        </p>
+
+    </form>
+
 </main>
 </body>
 </html>
