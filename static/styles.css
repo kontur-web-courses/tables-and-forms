@@ -29,3 +29,8 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+.pet-info {
+    display: flex;
+    flex-flow: column;
+}

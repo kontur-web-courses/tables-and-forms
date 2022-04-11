@@ -10,6 +10,67 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
+    <form name="pet-choosing" action="/pets/orders" method="post" class="pet-info">
+        <label>
+            Тип животного
+            <select name="petType">
+                <option value="tiger" selected>Оранжевая корова в чёрную полоску</option>
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+            </select>
+        </label>
+
+        <label>
+            Пол животного
+            <div>
+                <input type="radio" name="gender" value="boy" checked>Самец
+            </div>
+            <div>
+                <input type="radio" name="gender" value="girl">Самка
+            </div>
+            <div>
+                <input type="radio" name="gender" value="none">Любой
+            </div>
+        </label>
+
+        <label>
+            Цвет глаз
+            <input name="eyeColor" type="color">
+        </label>
+
+        <label>
+            Длина хвоста в метрах
+            <input name="tailLength" type="number" min="7" max="20" value="7">
+        </label>
+
+        <label>
+            Имя
+            <input name="name" type="text" minlength="3" maxlength="50" required>
+        </label>
+
+        <label>
+            Дата рождения
+            <input name="dateOfBirth" type="date" required>
+        </label>
+
+        <label>
+            Почта
+            <input name="email" type="email" required>
+        </label>
+
+        <label>
+            Номер телефона
+            <input name="phone" type="tel" required>
+        </label>
+
+        <label>
+            Я люблю ватрушки или сам являюсь <a href="/">ватрушкой</a>
+            <input name="rules" type="checkbox" value="true" required>
+        </label>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
 
 </main>
 </body>
