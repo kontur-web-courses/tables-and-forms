@@ -8,9 +8,94 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form method="post" action="/pets/orders/">
+        <fieldset>
+            <div>
+                <p>Тип животного</p>
 
-    <!--Форму размещай тут-->
+                <label>
+                    Кошка
+                    <input name="petType" type="checkbox" value="cat" checked/>
+                </label>
+                <label>
+                    Пес
+                    <input name="petType" type="checkbox" value="dog"/>
+                </label>
+                <label>
+                    Тигр
+                    <input name="petType" type="checkbox" value="tiger"/>
+                </label>
+            </div>
 
+            <div>
+                <label>
+                    Пол
+                    <select name="gender" required>
+                        <option value="boy">Мужской</option>
+                        <option value="girl">Женский</option>
+                        <option value="none" selected>Не выбран</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Цвет глаз
+                    <input name="eyeColor" type="color" required/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Длина хвоста
+                    <input name="tailLength" type="number" required min="7" max="120" value="100"/>
+                </label>
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+            <div>
+                <label>
+                    Ваше имя
+                    <input name="name" type="text" required value="Олег"/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Дата рождения
+                    <input name="dateOfBirth" type="date" required>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Почта
+                    <input type="email" name="email" placeholder="owner@mail.ru" required/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Телефон владельца
+                    <input type="tel" name="phone" placeholder="+79999999999" required/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Вы согласны с правилами?
+                    <input id="rules" type="radio" name="rules" value="true" required>
+                </label>
+            </div>
+
+        </fieldset>
+
+        <button>Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
 </main>
 </body>
 </html>
