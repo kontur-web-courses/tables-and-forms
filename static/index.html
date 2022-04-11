@@ -7,11 +7,6 @@
 </head>
 <body>
 <main>
-    <!--petType
-    gender
-    eyeColor
-    tailLength
-    name-->
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="post">
@@ -19,23 +14,49 @@
             Тип
             <input type="text" name="petType" value="косатка" required>
         </label>
+
         <label>
             Пол
             <input type="text" name="gender" value="лава" required>
         </label>
+
         <label>
             Цвет глаз
             <input type="text" name="eyeColor" value="чёрные глазааа" required>
         </label>
+
         <label>
             Длина хвоста
             <input type="text" name="tailLength" value="4" required>
         </label>
+
         <label>
             Имя
             <input type="text" name="name" value="Добби" required>
         </label>
-        <input type="submit">sus
+
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" required value="2022-04-11">
+        </label>
+
+        <label>
+            Почта
+            <input type="email" name="email" required value="a@b.c">
+        </label>
+
+        <label>
+            Телефон
+            <input type="tel" name="phone" required value="+10000000000">
+        </label>
+
+        <label>
+            Правила содержания
+            <input type="checkbox" name="rules" value="domestic" selected>Содержать дома<br/>
+            <input type="checkbox" name="rules" value="noMeat">Не кормить мясом<br/>
+        </label>
+
+        <input type="submit" name="submit" value="Sus">
     </form>
 
 </main>
