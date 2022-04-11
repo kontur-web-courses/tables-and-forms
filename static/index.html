@@ -12,22 +12,32 @@
     <form action="/pets/orders" method="post">
         <label>
             Тип
-            <input type="text" name="petType" value="косатка" required>
+<!--            <input type="text" name="petType" value="cat" required>-->
+            <select name="petType" required>
+                <option value="cat" selected>cat</option>
+                <option value="dog">dog</option>
+                <option value="tiger">tiger</option>
+            </select>
         </label>
 
         <label>
             Пол
-            <input type="text" name="gender" value="лава" required>
+<!--            <input type="text" name="gender" value="none" required>-->
+            <select name="gender" required>
+                <option value="boy">boy</option>
+                <option value="girl">girl</option>
+                <option value="none" selected>none</option>
+            </select>
         </label>
 
         <label>
             Цвет глаз
-            <input type="text" name="eyeColor" value="чёрные глазааа" required>
+            <input type="color" name="eyeColor" value="black" required>
         </label>
 
         <label>
             Длина хвоста
-            <input type="text" name="tailLength" value="4" required>
+            <input type="number" min="7" max="120" name="tailLength" value="69" required>
         </label>
 
         <label>
@@ -52,7 +62,7 @@
 
         <label>
             Правила содержания
-            <input type="checkbox" name="rules" value="domestic" selected>Содержать дома<br/>
+            <input type="checkbox" name="rules" value="domestic" checked>Содержать дома<br/>
             <input type="checkbox" name="rules" value="noMeat">Не кормить мясом<br/>
         </label>
 
