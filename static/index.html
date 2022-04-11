@@ -8,9 +8,70 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form method="post" action="/pets/orders">
 
-    <!--Форму размещай тут-->
+        <label>
+            Тип питомца:
+            <select name="petType" size="1" >
+                <option selected value="cat">Кот</option>
+                <option value="dog" >Собака</option>
+            </select>
+        </label>
+        <br>
+        <label>Пол<br>
+            <input type="radio" name="gender" value="boy" checked>
+            Male
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="gender" value="girl">
+            Anti-Male
+        </label>
+        <br>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor">
+        </label>
+        <br>
+        <label>
+            Длина хвоста (в метрах)
+            <input type="number" name="tailLength" value="7" min="7" max="120">
+        </label>
+        <br>
+        <label>
+            Имя
+            <input type="text" name="name" minlength="3" maxlength="50" value="Dog">
+        </label>
+        <br>
+        <label>
+            Email
+            <input type="email" name="email" value="dog@gmail.com">
+        </label>
+        <br>
+        <label>
+            День рождения
+            <input type="date" name="dateOfBirth" value="2011-09-29">
+        </label>
+        <br>
+        <label>
+            Телефон
+            <input type="tel" name="phone" value="80000000000">
+        </label>
+        <br>
+        <label>
+            Согласен с правилами
+            <input type="checkbox" name="rules" value="true" checked>
+        </label>
+        <br>
+        <label>
+            <input type="submit" value="Отправить">
+        </label>
+        <br>
+        <label>
+            <input type="reset">
+        </label>
 
+    </form>
 </main>
 </body>
 </html>
