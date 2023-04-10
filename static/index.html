@@ -10,9 +10,66 @@
     <h1>Найди себе друга!</h1>
 
     <form action="http://localhost:3000/pets/orders" method="post">
+        <label> Пол
+            <select name="petType">
+                <option value="cat" selected>Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label> <br>
+
+        <label> Пол
+            <select name="gender">
+                <option value="boy" selected>Мужской</option>
+                <option value="girl">Женский</option>
+                <option value="none">Нет</option>
+            </select>
+        </label> <br>
+
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" required>
+        </label><br>
+
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" required placeholder="7" min="7" max="120">
+        </label><br>
+
+        <label>
+            Имя
+            <input type="text" name="name" required placeholder="Муся" minlength="3" maxlength="50">
+        </label><br>
+
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" required>
+        </label><br>
+
+        <label>
+            Почта
+            <input type="email" name="email" required placeholder="123@mail.ru">
+        </label><br>
+
+        <label>
+            Телефон
+            <input type="tel" name="phone" required placeholder="88005553535">
+        </label><br>
+
+
+        <label>
+            <input type="checkbox" name="rules" value="true" required checked>
+            Rules
+        </label><br>
+
+
         <button type="submit" name="submit">
-            Зарегистрироваться
-        </button>
+            Подтвердить заказ
+        </button><br>
+
+        <button type="reset" name="submit">
+            Сброс
+        </button><br>
     </form>
 
 </main>
