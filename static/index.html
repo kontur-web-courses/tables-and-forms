@@ -9,7 +9,68 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <fieldset>
+            <label>
+                <input type="radio" name="petType" value="dog" checked> Собака
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="petType" value="cat"> Кот
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="petType" value="tiger"> Тигр
+            </label>
+            <br>
+            <label>
+                Пол
+                <select name="gender">
+                    <option value="boy">Мальчик</option>
+                    <option value="girl">Девочка</option>
+                    <option value="none">=Не вопределился ещё</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                Цвет глаз
+                <input type="color" name="eyeColor" value="blue">
+            </label>
+            <br>
+            <label>
+                Длина шеи
+                <input type="number" name="tailLength" value="10" required min="7" max="120">
+            </label>
+            <br>
+            <label>
+                Имя
+                <input type="text" name="name" value="Andrew" minlength="3" maxlength="50">
+            </label>
+            <br>
+            <label>
+                Дата рождения
+                <input type="date" name="dateOfBirth" value="2000-01-01">
+            </label>
+            <br>
+            <label>
+                Email
+                <input type="email" name="email" value="andrew@mail.ru" required>
+            </label>
+            <br>
+            <label>
+                Phone
+                <input type="tel" name="phone" value="+79999999999" required>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="rules" value="true" checked> Согласен с правилами
+            </label>
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
 
 </main>
 </body>
