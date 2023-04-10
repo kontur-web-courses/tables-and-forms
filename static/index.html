@@ -8,8 +8,56 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form method="post" action="pets/orders">
+        <label>
+            Имя питомца
+            <select name="petType">
+                <option value="cat" selected>cat</option>
+                <option value="dog">dog</option>
+                <option value="tiger">tiger</option>
+            </select>
+        </label>
+        <label>
+            <input type="radio" name="gender" value="boy" checked>Мужчина
+        </label>
+        <label>
+            <input type="radio" name="gender" value="girl">Женщина
+        </label>
+        <label>
+            <input type="radio" name="gender" value="none">Не решил еще
+        </label>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor">
+        </label>
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" placeholder="Введите число" min="7" max="120" value="7">
+        </label>
+        <label>
+            Имя питомца
+            <input type="text" name="name" placeholder="Введите имя" value="Daff" minlength="3" maxlength="50">
+        </label>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" placeholder="Введите дату" value="1991-01-01">
+        </label>
+        <label>
+            email
+            <input type="email" name="email" placeholder="Введите email" value="sfa@sgds.ru">
+        </label>
+        <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="Введите номер" value="88005553535">
+        </label>
+        <label>
+            Согласен ли
+            <input type="checkbox" name="rules" value="true" checked>
+        </label>
 
-    <!--Форму размещай тут-->
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
 
 </main>
 </body>
