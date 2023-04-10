@@ -29,3 +29,8 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+input, textarea, select, button{
+    margin: 10px 0 10px 0;
+    display: block;
+}
