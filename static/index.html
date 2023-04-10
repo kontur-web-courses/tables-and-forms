@@ -10,7 +10,62 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>Тип животного</label>
+                <select name="petType">
+                    <option value="dog">Собака</option>
+                    <option value="cat">Кошка</option>
+                    <option value="tiger">Тигр</option>
+                </select><br>
 
+        <label>
+            Цвет глаз
+            <select name="eyeColor">
+                <option value="#00FFFF" selected>Голубой</option>
+                <option value="#FFFF00" selected>Желтый</option>
+                <option value="#8B4513" selected>Карий</option>
+            </select>
+        </label>
+        <br>
+
+        <label>Пол:</label><br>
+        <label>
+            <input type="radio" name="gender" value="boy">
+        </label>Мальчик<br>
+        <label>
+            <input type="radio" name="gender" value="girl">
+        </label>Девочка<br>
+        <label>
+            <input type="radio" name="gender" value="none">
+        </label>Не решил ещё<br>
+
+        <label>
+            Введи длину хвоста:
+            <input type="number" name="tailLength" placeholder="7" min="7" max="120">
+        </label><br>
+        <label>
+            Введите имя питомца:
+            <input type="text" name="name" placeholder="Пузик" maxlength="50" minlength="3">
+        </label><br>
+        <label>
+            Введите дату рождения:
+            <input type="date" name="dateOfBirth" placeholder="01.01.2001">
+        </label><br>
+        <label>
+            Введите почту:
+            <input type="email" name="email" placeholder="ivan.ivanov@gmail.com" required>
+        </label><br>
+        <label>
+            <input type="tel" name="phone" placeholder="Введите номер">
+        </label><br>
+        <label>
+            <input type="checkbox" name="rules" value="true" required>Я согласен
+        </label><br>
+        <button type="submit" name="submit">Отправить</button><br>
+        <label>
+            <input type="reset"> Сбрось параметры
+        </label>
+    </form>
 </main>
 </body>
 </html>
