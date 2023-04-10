@@ -17,16 +17,14 @@
             <option value="tiger">tiger</option>
           </select></label
         >
-        <label for="gender"
-          ><input type="radio" name="gender" value="boy" checked />boy</label
-        >
-        <label for="gender"
-          ><input type="radio" name="gender" value="girl" />girl</label
-        >
-        <label for="gender"
-          ><input type="radio" name="gender" value="none" />none</label
-        >
-        <label for="eyeColor"><input type="color" name="eyeColor" /></label>
+        <label for="gender1">
+            <input type="radio" id="gender1" name="gender" value="boy" checked />boy</label>
+        <label for="gender2">
+            <input type="radio" id="gender2" name="gender" value="girl" />girl</label>
+        <label for="gender3">
+            <input type="radio" id="gender3" name="gender" value="none" />none</label>
+        <label for="eyeColor">
+            <input type="color" id="eyeColor" name="eyeColor" /></label>
         <label for="tailLength"
           ><input
             type="number"
@@ -52,14 +50,14 @@
             name="dateOfBirth"
             value="12.12.1999"
         /></label>
-        <label for="email"
-          ><input type="email" placeholder="example@mail.ru" id="email"
-          name="email"/ ></label
-        >
+        <label for="email">
+            <input type="email" placeholder="example@mail.ru" id="email" name="email"/>
+        </label>
         <label for="phone"><input type="tel" id="phone" name="phone" /></label>
         <label for="rules">
-          <textarea name="rules" id="rules" cols="30" rows="10"></textarea>
+          <input type="checkbox" name="rules" id="rules" value="true" checked></input>
         </label>
+        <button type="reset">сбросить</button>
         <button type="submit">отправить</button>
       </form>
     </main>
