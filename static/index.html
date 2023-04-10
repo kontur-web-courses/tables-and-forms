@@ -1,16 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <label>
+            Ваше животное:
+            <select name="petType">
+                <option value="dog" selected>Собака</option>
+                <option value="cat">Кошка</option>
+                <option value="frog">Лягушка</option>
+                <option value="lion">Лев</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
 
+        <label>
+            <input type="radio" name="gender" value="boy" />
+            Мужчина
+        </label>
+        <label>
+            <input type="radio" name="gender" value="girl" /> Женщина
+        </label>
+        <label>
+            <input type="radio" name="gender" value="none" checked />
+            None
+        </label>
+
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" value="#000" />
+        </label>
+
+        <label>
+            Длина хвоста
+            <input
+                    type="number"
+                    min="7"
+                    max="120"
+                    value="7"
+                    name="tailLength"
+            />
+        </label>
+
+        <label>
+            Кличка
+            <input
+                    type="text"
+                    name="name"
+                    value="Бобик"
+                    minlength="3"
+                    maxlength="50"
+                    required
+            />
+        </label>
+
+        <label>
+            Дата
+            <input type="date" value="2023-04-10" name="dateOfBirth" />
+        </label>
+
+        <label>
+            Email
+            <input
+                    type="email"
+                    name="email"
+                    value="info@pet.ru"
+                    required
+            />
+        </label>
+
+        <label>
+            Номер телефона
+            <input
+                    type="tel"
+                    name="phone"
+                    value="8-800-555-35-35"
+                    required
+            />
+        </label>
+
+        <label>
+            Продам душу дъяволу, ознакомившись с правилами
+            <input
+                    type="checkbox"
+                    value="true"
+                    name="rules"
+                    checked
+                    required
+            />
+        </label>
+        <input type="submit" />
+        <input type="reset" value="Сбросить все значения" />
+    </form>
 </main>
 </body>
 </html>
