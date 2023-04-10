@@ -9,7 +9,67 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <FIELDSET>
+            Тип животного<br/>
+            <label>
+                <input type="radio" name="petType" value="dog">
+                Собака
+            </label><br/>
+            <label>
+                <input type="radio" name="petType" value="cat">
+                Попугай
+            </label><br/>
+            <label>
+                <input type="radio" name="petType" value="tiger" checked>
+                Tiger
+            </label><br/>
+        </FIELDSET>
+        <FIELDSET>
+            Пол<br/>
+            <label>
+                <input type="radio" name="gender" value="boy" checked>
+                Девочка
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="girl">
+                Мальчик
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="none">
+                Нет
+            </label><br>
+        </FIELDSET>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" value="#200040">
+        </label><br/>
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" min="7" max="120" value="70">
+        </label><br/>
+        <label>
+            Имя хозяина
+            <input type="text" name="name" value="Мальчик">
+        </label><br/>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth">
+        </label><br/>
+        <label>
+            mail
+            <input type="email" name="email" value="a@a.a">
+        </label><br/>
+        <label>
+            Номер телефона
+            <input type="tel" name="phone" value="00000000000">
+        </label><br/>
+        <label>
+            <input type="checkbox" hidden="hidden" name="rules" required checked value="true">
+        </label><br/>
+        <input type="submit" title="Send">
+        <input type="reset" title="Reset">
+    </form>
 
 </main>
 </body>
