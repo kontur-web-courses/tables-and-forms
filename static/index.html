@@ -9,30 +9,27 @@
 <main>
     <h1>Найди себе друга!</h1>
 
+    <!--Форму размещай тут-->
     <form method="post" action="/pets/orders">
 
 
         <label>petType: <input type="radio" name="petType" value="dog" checked>Собака</label>
         <label><input type="radio" name="petType" value="cat">Кот</label>
-        <label><input type="radio" name="petType" value="tiger">Тигр</label>
-        <br>
-
-
+        <label><input type="radio" name="petType" value="tiger">Тигр</label><br>
         <label>gender: <input type="radio" name="gender" value="boy">Мальчик</label>
+        <label> <input type="radio" name="gender" value="girl">Девочка</label>
+        <label> <input type="radio" name="gender" value="none" checked>None</label><br>
+        <label for="eyeColor">eyeColor:<input type="color" name="eyeColor" id="eyeColor"></label><br>
+        <label for="tailLength">tailLength: <input type="number" value="7" name="tailLength" id="tailLength" min="7"
+                                                   max="120"></label><br>
+        <label for="name">name: <input name="name" value="Jacky" id="name" minlength="3" maxlength="50"></label><br>
+        <label for="dateOfBirth">dateOfBirth: <input type="date" value="2023-04-10" name="dateOfBirth" id="dateOfBirth"></label><br>
+        <label for="email">email: <input type="email" value="example@pet.com" name="email" id="email"></label><br>
+        <label for="phone">phone: <input name="phone" value="+7" id="phone" required></label><br>
+        <label for="rules">rules: <input value="true" name="rules" id="rules"></label><br>
 
         <br>
-        <label for="eyeColor">eyeColor: </label><input name="eyeColor" id="eyeColor"><br>
-        <label for="tailLength">tailLength: </label><input name="tailLength" id="tailLength"><br>
-        <label for="name">name: </label><input name="name" id="name"><br>
-        <label for="dateOfBirth">dateOfBirth: </label><input name="dateOfBirth" id="dateOfBirth"><br>
-        <label for="email">email: </label><input name="email" id="email"><br>
-        <label for="phone">phone: </label><input name="phone" id="phone"><br>
-        <label for="rules">rules: </label><input name="rules" id="rules"><br>
-
-        <br>
-        <button>нажми</button>
-
-        <input type="reset" value="Reset"/>
+        <input type="reset" value="Reset"/> <button>Далее</button>
     </form>
 
 </main>
