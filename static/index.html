@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <label>
+            Тип животного
+            <select name="petType">
+                <option value="cat" selected>Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        <label>
+            Пол
+            <input type="radio" name="gender" value="boy" checked> Мальчик
+            <input type="radio" name="gender" value="girl"> Девочка
+        </label>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" value="#000000">
+        </label>
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" placeholder="16" value="16">
+        </label>
+        <label>
+            Имя животного
+            <input type="text" name="name" placeholder="Феодей" min = 2 max = 30 value="Феодей">
+        </label>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" value="2023-04-03">
+        </label>
+        <label>
+            Электронная почта
+            <input type="email" name="email" placeholder="your@mail.com" value="your@mail.com">
+        </label>
+        <label>
+            Номер телефона
+            <input type="tel" name="phone" placeholder="+79527367200" value="+79527367200">
+        </label>
+        <label>
+            <input type="radio" name="rules" value="true"> Согласен с правилами сайта
+        </label>
+        <input type="submit" name="submit" value="Отправить">
+        <input type="reset" name="reset" value="Сброс">
+    </form>
 
 </main>
 </body>
+
 </html>
