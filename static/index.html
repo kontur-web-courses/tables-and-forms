@@ -9,7 +9,49 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form method="post" action="/pets/orders">
+        <label for="petType">Тип питомца</label>
+        <select name="petType" id="petType">
+            <option value="cat" selected>кот</option>
+            <option value="dog">собака</option>
+            <option value="tiger" selected>Тигар</option>
+        </select>
+
+        <label for="gender">Пол</label>
+        <select name="gender" id="gender">
+            <option value="boy" selected>Male</option>
+            <option value="girl">Female</option>
+            <option value="none" selected>Тигар</option>
+        </select>
+
+        <label for="eyeColor">Цвет глаз</label>
+        <input type="color" name="eyeColor" id="eyeColor">
+
+        <label for="tailLength">длина хвоста</label>
+        <input type="range" id="tailLength" name="tailLength" value="24" min="1" max="100"
+               oninput="this.nextElementSibling.value = this.value">
+        <output>24</output>
+        см
+
+        <label for="name">имя питомца</label>
+        <input type="text" name="name" minlength="3" maxlength="50" placeholder="введите имя" value="Имя" id="name">
+
+        <label for="dateOfBirth">дата рождения</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" value="2012-03-23">
+
+        <label for="email">мыло</label>
+        <input type="email" name="email" id="email" placeholder="Email" value="email@email.com">
+
+        <label for="tel">номер телефона</label>
+        <input type="tel" id="tel" name="phone" placeholder="номер телефона" value="000 000 000">
+
+        <label for="rules">Правила</label>
+        <textarea name="rules" id="rules">Не курить</textarea>
+        <br>
+        <input type="submit">
+        <a href="/" class="defaults">дефолт</a>
+
+    </form>
 
 </main>
 </body>
