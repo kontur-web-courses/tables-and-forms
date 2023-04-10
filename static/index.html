@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Найди себе друга!</h1>
 
-    <form action="/pets/orders" method="post">
-        <button type="submit">
-            отправить
-        </button>
-    </form>
-
-</main>
-</body>
+      <form action="/pets/orders" method="post">
+        <label for="petType"
+          ><select name="petType" id="petType">
+            <option value="cat" checked>cat</option>
+            <option value="dog">dog</option>
+            <option value="tiger">tiger</option>
+          </select></label
+        >
+        <label for="gender"
+          ><input type="radio" name="gender" value="boy" checked />boy</label
+        >
+        <label for="gender"
+          ><input type="radio" name="gender" value="girl" />girl</label
+        >
+        <label for="gender"
+          ><input type="radio" name="gender" value="none" />none</label
+        >
+        <label for="eyeColor"><input type="color" name="eyeColor" /></label>
+        <label for="tailLength"
+          ><input
+            type="number"
+            id="tailLength"
+            name="tailLength"
+            min="7"
+            max="120"
+            value="7"
+        /></label>
+        <label for="name"
+          ><input
+            type="text"
+            id="name"
+            name="name"
+            minlength="3"
+            maxlength="50"
+            value="cat"
+        /></label>
+        <label for="dateOfBirth"
+          ><input
+            type="date"
+            id="dateOfBirth"
+            name="dateOfBirth"
+            value="12.12.1999"
+        /></label>
+        <label for="email"
+          ><input type="email" placeholder="example@mail.ru" id="email"
+          name="email"/ ></label
+        >
+        <label for="phone"><input type="tel" id="phone" name="phone" /></label>
+        <label for="rules">
+          <textarea name="rules" id="rules" cols="30" rows="10"></textarea>
+        </label>
+        <button type="submit">отправить</button>
+      </form>
+    </main>
+  </body>
 </html>
