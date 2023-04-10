@@ -10,7 +10,53 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
+    <!-- Создай форму, в которая будет отправлять свои данные методом POST по адресу /pets/orders. Попробуй отправить форму и узнаешь, какие поля требуется в ней передавать. -->
+    <form action="/pets/orders" method="post">
+        <label for="petType">Выберите животное:</label>
+        <select name="petType" id="petType">
+            <option value="dog">Собака</option>
+            <option value="cat">Кошка</option>
+            <option value="parrot">Попугай</option>
+            <option value="hamster">Хомяк</option>
+            <option value="goldfish">Золотая рыбка</option>
+        </select> <br> <br>
 
+        <label for="name">Введите имя животного:</label>
+        <input type="text" name="name" id="name" min=3 max=50 placeholder="Шарик"> <br> <br>
+        <label for="dateOfBirth">Введите дату рождения</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth"> <br> <br>
+
+        <label for="phone">Введите телефон животного:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="6661337228"> <br> <br>
+
+        <label for="eyeColor">Выберите цвет глаз</label>
+        <input type="color" name="eyeColor" id="eyeColor"> <br> <br>
+
+        <label for="tailLength">Введите длину хвоста:</label>
+        <input type="range" name="tailLength" id="tailLength"> <br> <br>
+
+        <label for="radio1">
+            <input type="radio" name="gender" value="boy" id="radio1"> Мужчина <br>
+        </label>
+        <label for="radio2">
+            <input type="radio" name="gender" value="girl" id="radio2"> Женщина <br>
+        </label>
+        <label for="radio3">
+            <input type="radio" name="gender" value="none" checked id="radio3"> Боевой вертолет <br> <br>
+        </label>
+
+        <label for="email">Email
+            <input type="email" name="email" id="email" required placeholder="ya.syel.deda@morgen.ua"> <br> <br>
+        </label>
+
+        <label for="rules">
+            <input type="checkbox" name="rules" value="true" id="rules"> с правилами ознакомлен <br> <br>
+        </label>
+
+        <button type="submit">Отправить</button> <br> <br>
+
+        <input type="reset" value="сбросить">
+    </form>
 </main>
 </body>
 </html>
