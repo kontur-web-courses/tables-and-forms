@@ -9,12 +9,47 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <form name="pets" action="https://localhost:3000/pets/orders" method="post" >
+    <form name="pets" action="/pets/orders" method="post" >
         <label>Choose</label>
         <ul>
-            <li><input type="checkbox" name="pet1" value="pet1">pet1 </li>
-            <li><input type="checkbox" name="pet2" value="pet2">pet2 </li>
+            <li><label> Pet Type:
+                <select name="petType">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="tiger">Tiger</option>
+                </select>
+            </label></li>
+            <li><label> Pet gender:
+                <select name="gender">
+                    <option value="none">N***</option>
+                    <option value="boy">Boy</option>
+                    <option value="girl">Girl</option>
+                </select>
+            </label></li>
+            <li><label> Color:
+                <input type="color" name="eyeColor">
+            </label></li>
+            <li><label> Tail Length:
+                <input type="number" name="tailLength" required min="7" max="120">
+            </label></li>
+            <li><label> Name:
+                <input type="text" name="name" minlength="3" maxlength="50" required>
+            </label></li>
+            <li><label> Date of Birth:
+                <input type="date" name="dateOfBirth" required>
+            </label></li>
+            <li><label> Email:
+                <input type="email" name="email" required>
+            </label></li>
+            <li><label> Phone number:
+                <input type="tel" name="phone">
+            </label></li>
+            <li><label>Do you agree? Yes
+                <input type="hidden" name="rules" value="true">
+            </label></li>
         </ul>
+
+
 
         <input type="submit" value="Отправить">
 
