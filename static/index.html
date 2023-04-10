@@ -9,8 +9,63 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
 
+    <form action="/pets/orders" method="post">
+        <label>
+            Тип животного
+            <select name="petType">
+                <option value="cat" selected>Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label><br>
+<!--        <label>-->
+<!--            <input type="radio" name="gender" value="Самец"> Самец-->
+<!--        </label>-->
+<!--        <label>-->
+<!--            <input type="radio" name="gender" value="Самка"> Самка-->
+<!--        </label><br>-->
+        <label>
+            Пол
+            <select name="gender">
+                <option value="boy" selected>Самец</option>
+                <option value="girl">Самка</option>
+                <option value="none">Еще не решил</option>
+            </select>
+        </label><br>
+        <label>
+            Цвет глаз
+            <select name="eyeColor">
+                <option value="#00FFFF" selected>Голубой</option>
+                <option value="#FFFF00" selected>Желтый</option>
+                <option value="#8B4513" selected>Карий</option>
+            </select>
+        </label><br>
+        <label>
+            Длина хвоста
+            <input type="number" name="tailLength" min="7" max="120">
+        </label><br>
+        <label>
+            Имя питомца
+            <input type="text" name="name" minlength="3" maxlength="50">
+        </label><br>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth">
+        </label><br>
+        <label>
+            Email
+            <input type="email" name="email">
+        </label><br>
+        <label>
+            Телефон
+            <input type="tel" name="phone">
+        </label><br>
+        <label>
+            <input type="checkbox" name="rules" value="true" required>Я согласен с условиями
+        </label><br>
+        <button type="submit" name="submit">Отправить</button>
+    </form>
 </main>
 </body>
 </html>
